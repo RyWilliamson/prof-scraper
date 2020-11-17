@@ -4,10 +4,9 @@ Date: 16/11/2020
 200 words max
 Some questions to consider:
 
-Does your code build properly with "stack build"?
+Code builds properly with stack build (stack version 2.5.1, ghci version 8.0.2)
 
-Are there any parts of the specification you did not implement in part
-A?
+I implemented all parts of the Task 1 specification
 
 For the 'stretch' part B, which libraries did you use and what kind of
 output did you generate?
