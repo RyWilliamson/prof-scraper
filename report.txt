@@ -1,30 +1,58 @@
-<Insert Student Name Here>
-GUID:
-Date:
+Ryan Williamson
+GUID: 2306841w
+Date: 18/11/2020
 
--- write what you want in here -- this is just some filler text --
-500 words max
+-----------------------------------------------------------------------------
 
-For this report, I am comparing my experiences with Haskell and
-Python.  In particular, I have used the Scalpel scraping library in
-Haskell, and the equivalent scrapy library in Python.
+Introduction:
+  For this report, I'll be primarily comparing Haskell and Python 3, but
+  I'll also be making some comparisons with Java. When discussing scraping
+  I've used Scalpel in Haskell, and BeautifulSoup in Python 3 when comparing
+  my scraping experience.
 
-Code size: Functional code in general (and Haskell in particular) is
-  highly concise. This comes from powerful features like higher order
-  functions on lists- much more concise than for/while loop
-  control-flow structures in Python. Also, high-level operators and
-  functions are provided in the standard libraries (like Data.List).
+Code Size:
+  First, comparing the size of code in the three languages. Haskell, by
+  virtue of being a functional programming language tends to be the most
+  concise of the three. Java is at the other end, it required lots of 
+  boilerplate code to get things running (defining classes, and a verbose
+  main function to get anything running). Python falls in the middle, still
+  being an imperative language but not requiring all the boilerplate Java does.
+  Both Java and Python have functional style capabilities though, this can 
+  be used to make some of the code more concise.
 
+Code Readability:
+  I think Haskell is much more difficult to read than Python or Java. I think
+  one reason for this is that in Haskell you often have many operations on a 
+  single line, whereas in Java and Python these would be written as a sequence
+  of instructions across multiple lines. Another reason though is personal bias,
+  had I been taught functional programming first, I may view this the other way
+  around. I do however think the function pattern matching for parameters is very
+  readable, compared to equivalent ways of doing this imperatively such as if 
+  statements. Also Haskell and Java are both typed languages vs Python which is 
+  not, this can make things like the function definitions in Haskell and Java 
+  easier to read.
 
-Code readability: While Haskell code is particularly dense, it can be
-  difficult to read sometimes. Meaningful variable names might help.
+Code Maintainability:
+  There's not anything fundamentally different in terms of maintenance. In all 
+  three languages you have the ability to comment. And fixing bugs in all the 
+  languages should also be a similar process. Sometimes in Haskell it can be
+  more difficult to pin down exactly where the bug lies due to some slightly
+  confusing error messages but Python and Java still suffer from this problem.
 
+Toolchain Support:
+  Both stack and pip work well once installed. However, stack, and Haskell in 
+  general, is much harder to get installed. Also, the versions of Haskell and
+  stack in the ubuntu repositories are quite out of date. Due to Python and
+  Java being far more popular than Haskell there's a lot more examples and
+  good quality documentation out there. I found even some of the official 
+  documentation for Haskell to be lacking in   terms of good examples. This 
+  affected my productivity, it takes me far longer to get to grips with using
+  a new library in Haskell.
 
-Code maintainability:
-  Bug fixes? Comments?
-
-
-Toolchain support: Does stack work as well as pip? Is there as much
-  online support for Haskell as for Python? Does this affect developer
-  productivity at all?
-
+Scraping:
+  I found using BeautifulSoup in Python to be a far more pleasant experience than 
+  scalepl. However, writing a scraper in scalpel did produce far more concise 
+  code than using Python. This was due to BeautifulSoup processing things across
+  multiple expressions and through using explicit iteration in Python. Even though
+  it took more lines to write, the Python scraper was far simpler to design and 
+  understand, as the documentation and api was much easier to understand.
