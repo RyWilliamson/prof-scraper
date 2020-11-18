@@ -1,13 +1,13 @@
-name:                prof-scraper
-version:             0.1.0.0
-github:              "jeremysinger/prof-scraper"
-license:             BSD3
-author:              "Jeremy Singer"
-maintainer:          "Jeremy.Singer@glasgow.ac.uk"
-copyright:           "2020 Jeremy Singer"
+name: prof-scraper
+version: 0.1.0.0
+github: "rywilliamson/prof-scraper"
+license: BSD3
+author: "Ryan Williamson"
+maintainer: "2306841w@student.gla.ac.uk"
+copyright: "2020 Ryan Williamson"
 
 extra-source-files:
-- README.md
+  - README.md
 
 # Metadata used when publishing your package
 # synopsis:            Coursework for FP(H) - UoG web scraper
@@ -16,38 +16,41 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/jeremysinger/prof-scraper#readme>
+description: Please see the README on GitHub at <https://github.com/rywilliamson/prof-scraper#readme>
 
 dependencies:
-- base >= 4.7 && < 5
-- scalpel
-- split
-- mtl
-- http-client
+  - base >= 4.7 && < 5
+  - scalpel
+  - split
+  - mtl
+  - http-client
+  - cassava
+  - vector
+  - bytestring
 
 library:
   source-dirs: src
 
 executables:
   prof-scraper-exe:
-    main:                Main.hs
-    source-dirs:         app
+    main: Main.hs
+    source-dirs: app
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
     dependencies:
-    - prof-scraper
+      - prof-scraper
 
 tests:
   prof-scraper-test:
-    main:                Spec.hs
-    source-dirs:         test
+    main: Spec.hs
+    source-dirs: test
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
     dependencies:
-    - prof-scraper
-    - tasty
-    - tasty-hunit
+      - prof-scraper
+      - tasty
+      - tasty-hunit
